@@ -26,6 +26,7 @@ body {
 
 .container {
     width: 25rem; /* 400px */
+    margin: 1rem;
     background-color: var(--clr-neutral-100);
     border-radius: 1.25rem;
     overflow: hidden;
@@ -41,10 +42,19 @@ body {
     background: linear-gradient(90deg, var(--clr-primary), var(--clr-secondary));
 }
 
-.result {
+.previous-result, .current-result {
     font-size: 2.75rem;
     font-weight: 600;
+    line-height: 2.75rem;
+    text-align: right;
     color: var(--clr-white);
+    word-break: break-all;
+}
+
+.previous-result {
+    font-size: 1.75rem;
+    font-weight: 400;
+    opacity: 0.75;
 }
 
 .span-2 {
@@ -75,6 +85,10 @@ button:hover {
     background-color: var(--clr-hover);
 }
 
-.operator {
+button:focus {
+    background-color: var(--clr-hover);
+}
+
+#equal, #clear, .operator {
     color: var(--clr-primary);
 }

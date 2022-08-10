@@ -10,29 +10,30 @@
     <title>Calculator</title>
 </head>
 <body>
-    <div class="container">
+    <main class="container">
         <div class="display">
-            <p class="result">0</p>
+            <p class="previous-result"></p>
+            <p class="current-result"></p>
         </div>
         <div class="keys">
-            <button class="operator span-3">AC</button>
-            <button class="operator">&divide;</button>
+            <button id="clear" class="span-3">AC</button>
+            <button class="operator">/</button>
             <button class="operand">7</button>
             <button class="operand">8</button>
             <button class="operand">9</button>
-            <button class="operator">&times;</button>
+            <button class="operator">*</button>
             <button class="operand">4</button>
             <button class="operand">5</button>
             <button class="operand">6</button>
-            <button class="operator">&minus;</button>
+            <button class="operator">-</button>
             <button class="operand">1</button>
             <button class="operand">2</button>
             <button class="operand">3</button>
-            <button class="operator">&plus;</button>
-            <button class="span-2">0</button>
+            <button class="operator">+</button>
+            <button class="operand span-2">0</button>
             <button class="operand">.</button>
-            <button class="operator">&equals;</button>
+            <button id="equal">&equals;</button>
         </div>
-    </div>
+    </main>
 </body>
 </html>
