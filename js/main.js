@@ -90,7 +90,7 @@ operator.forEach(item => {
 })
 
 equal.addEventListener("click", () => {
-    if (currentValue === "") return;
+    if (currentValue === "" || previousValue === "") return;
     equalPressed = true;
     previousDisplay.textContent = previousValue + " " + operatorSelected + " " + currentValue;
     currentValue = operate(operatorSelected, previousValue, currentValue);
